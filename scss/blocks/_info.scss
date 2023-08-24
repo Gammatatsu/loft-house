@@ -1,0 +1,27 @@
+.info {
+    margin-bottom: 120px;
+    &__list {
+        width: 840px;
+        margin: 0 auto;
+        column-gap: 70px;
+        display: grid;
+        grid-template-columns: 193px  133px 134px 124px;
+        &-item {
+            text-align: center;
+        }
+
+        &-desc {
+            color: $white;
+            font-family: $font-secondary;
+            font-size: 20px;
+            line-height: 27px;
+            font-weight: 300;
+        }
+
+        &-image {
+            margin-bottom: 53px;
+            width: 80px;
+            height: 80px;
+        }
+    }
+}

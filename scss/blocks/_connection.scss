@@ -1,0 +1,61 @@
+.connection {
+    min-height: 560px;
+    background-image: url(/img/main/form-bg.jpg);
+    padding: 180px 0;
+
+    &__title {
+        font-family: $font-accent;
+        color: $accent;
+        font-size: 36px;
+        line-height: 48px;
+        margin-bottom: 17px;
+    }
+
+    &__place {
+        display: flex;
+        gap: 30px;
+
+        &-desc {
+            color: $white;
+            line-height: 24px;
+            width: 540px;
+        }
+    }
+
+    &__form {
+        width: 540px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 30px;
+        row-gap: 35px;
+
+        &-input {
+            width: 255px;
+            height: 50px;
+            text-align: center;
+            background-color: rgba(255,255,255,0.2);
+
+            &::placeholder {
+                color: $placeholder;
+                font-size: 14px;
+                line-height: 27px;
+                font-weight: 400;
+                font-family: $font-main;
+            }
+        }
+        &-alert{
+            font-size: 13px;
+            text-align: center;
+            line-height: 16px;
+
+        }
+        &-submit{
+            background-color: $accent;
+            width: 255px;
+            height: 50px;
+            color: $white;
+        }
+
+    }
+
+}
