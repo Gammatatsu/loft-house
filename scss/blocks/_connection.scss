@@ -2,6 +2,8 @@
     min-height: 560px;
     background-image: url(../img/main/form-bg.jpg);
     padding: 180px 0;
+    background-position-x: center;
+    background-repeat: no-repeat;
 
     &__title {
         font-family: $font-accent;
