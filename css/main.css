@@ -120,7 +120,7 @@ a:hover {
 .header {
   min-height: 840px;
   margin-bottom: 120px;
-  background-image: url(/img/header/header-bg.jpg);
+  background-image: url(../img/header/header-bg.jpg);
   background-repeat: no-repeat;
 }
 .header__navigation {
@@ -220,7 +220,7 @@ a:hover {
 
 .connection {
   min-height: 560px;
-  background-image: url(/img/main/form-bg.jpg);
+  background-image: url(../img/main/form-bg.jpg);
   padding: 180px 0;
 }
 .connection__title {
