@@ -1,0 +1,16 @@
+.position{
+    margin-bottom: 180px;
+    &__title{
+        color: $accent;
+        font-size: 36px;
+        line-height: 48px;
+        font-family: $font-accent; 
+        margin-bottom: 88px;
+    }
+    &__image{
+        width: 100%;
+        height: 358px;
+
+    }
+
+}

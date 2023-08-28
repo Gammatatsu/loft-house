@@ -1,0 +1,44 @@
+.feedback {
+    margin-bottom: 180px;
+
+    &__title {
+        margin-bottom: 88px;
+        font-family: $font-accent;
+        font-size: 36px;
+        color: $accent;
+    }
+    &__input{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        column-gap: 30px;
+        &-name,
+        &-number{
+            width: 255px;
+                height: 50px;
+                text-align: center;
+                background-color: rgba(255,255,255,0.2);
+    
+                &::placeholder {
+                    color: $placeholder;
+                    font-size: 14px;
+                    line-height: 27px;
+                    font-weight: 400;
+                    font-family: $font-main;
+                }
+        }
+        &-desc{
+            font-size: 13px;
+            text-align: bottom;
+            line-height: 16px;
+            display: flex;
+            align-self: end;
+        }
+        &-submit{
+            background-color: $accent;
+            width: 255px;
+            height: 50px;
+            color: $white;
+        }
+    }
+   
+}

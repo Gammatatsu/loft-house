@@ -280,4 +280,117 @@ a:hover {
   width: 255px;
   height: 50px;
   color: rgb(255, 255, 255);
+}
+
+.video {
+  margin: 0 auto;
+  margin-bottom: 180px;
+  width: 750px;
+}
+.video__link {
+  position: relative;
+  display: inline-block;
+}
+.video__link-icon {
+  position: absolute;
+  right: 50%;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.position {
+  margin-bottom: 180px;
+}
+.position__title {
+  color: rgb(212, 193, 127);
+  font-size: 36px;
+  line-height: 48px;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 88px;
+}
+.position__image {
+  width: 100%;
+  height: 358px;
+}
+
+.feedback {
+  margin-bottom: 180px;
+}
+.feedback__title {
+  margin-bottom: 88px;
+  font-family: "Playfair Display", serif;
+  font-size: 36px;
+  color: rgb(212, 193, 127);
+}
+.feedback__input {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.feedback__input-name, .feedback__input-number {
+  width: 255px;
+  height: 50px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.feedback__input-name::-moz-placeholder, .feedback__input-number::-moz-placeholder {
+  color: #BEBEBE;
+  font-size: 14px;
+  line-height: 27px;
+  font-weight: 400;
+  font-family: "Raleway", "sans-serif";
+}
+.feedback__input-name::placeholder, .feedback__input-number::placeholder {
+  color: #BEBEBE;
+  font-size: 14px;
+  line-height: 27px;
+  font-weight: 400;
+  font-family: "Raleway", "sans-serif";
+}
+.feedback__input-desc {
+  font-size: 13px;
+  text-align: bottom;
+  line-height: 16px;
+  display: flex;
+  align-self: end;
+}
+.feedback__input-submit {
+  background-color: rgb(212, 193, 127);
+  width: 255px;
+  height: 50px;
+  color: rgb(255, 255, 255);
+}
+
+.footer {
+  background-color: rgb(45, 52, 60);
+}
+.footer__logo {
+  margin-right: auto;
+  margin-bottom: auto;
+}
+.footer__wrapper {
+  display: flex;
+  padding: 60px 0;
+}
+.footer__navigation {
+  display: flex;
+}
+.footer__navigation-list {
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer__navigation-list:nth-child(1) {
+  margin-right: 166px;
+}
+.footer__navigation-list:nth-child(2) {
+  margin-right: 57px;
+}
+.footer__navigation-media {
+  display: flex;
+  gap: 22px;
 }/*# sourceMappingURL=main.css.map */
