@@ -1,18 +1,21 @@
 .video {
+    position: relative;
+    display: block;
     margin: 0 auto;
     margin-bottom: 180px;
     width: 750px;
-
-
-
-
-
+    &::before{
+        content: 'IV';
+        top:90px;
+        left: calc(50% + 555px);
+        transform: translate(-47%,0%);
+        @include decorNumber;
+    }
     &__link {
 
         position: relative;
         display: inline-block;
-        
-        &-image {}
+
 
         &-icon {
             position: absolute;
@@ -25,4 +28,16 @@
 
     }
 
+}
+@media (max-width:1555px){
+    .video{
+        &::before{
+            display: none;
+        }
+    }
+}
+@media (max-width:800px){
+    .video{
+        max-width: 100%;
+    }
 }

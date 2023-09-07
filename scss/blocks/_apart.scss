@@ -1,4 +1,13 @@
 .apart {
+    position: relative;
+    &::before{
+        content: 'III';
+        top:0;
+        left: calc(50% - 555px);
+        transform: translate(-50%,0%);
+        @include decorNumber;
+    }
+    margin-bottom: 180px;
     &__title {
         color: $accent;
         font-family: $font-accent;
@@ -12,6 +21,13 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
+        &-img{
+            transition: transform 0.2s ease-in;
+            &:hover{
+                transform: scale(1.1);
+                filter: contrast(110%) brightness(1.2) saturate(1.2);
+            }
+        }
 
         &-item {
             position: relative;
@@ -31,3 +47,33 @@
 
 
 }
+@media (max-width:1555px){
+    .apart{
+        &::before{
+            display: none;
+        }
+    }
+}
+@media (max-width:1000px){
+    .apart{
+        &__title{
+            text-align: center;
+        }
+        margin-bottom: 0;
+        &__list{
+            margin: 0 auto;
+            width: 540px;
+            grid-template-columns: repeat(1,1fr);
+        }
+    }
+
+}
+@media (max-width:1000px){
+    .apart{
+        &__list{
+            width: 100%;
+        }
+    }
+
+}
+

@@ -7,38 +7,96 @@
         font-size: 36px;
         color: $accent;
     }
-    &__input{
+
+    &__input {
         display: grid;
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(4, 1fr);
         column-gap: 30px;
+
         &-name,
-        &-number{
+        &-number {
             width: 255px;
-                height: 50px;
-                text-align: center;
-                background-color: rgba(255,255,255,0.2);
-    
-                &::placeholder {
-                    color: $placeholder;
-                    font-size: 14px;
-                    line-height: 27px;
-                    font-weight: 400;
-                    font-family: $font-main;
-                }
+            height: 50px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.2);
+
+            &::placeholder {
+                color: $placeholder;
+                font-size: 14px;
+                line-height: 27px;
+                font-weight: 400;
+                font-family: $font-main;
+            }
         }
-        &-desc{
+
+        &-desc {
             font-size: 13px;
             text-align: bottom;
             line-height: 16px;
             display: flex;
             align-self: end;
         }
-        &-submit{
+
+        &-submit {
             background-color: $accent;
             width: 255px;
             height: 50px;
             color: $white;
         }
     }
-   
+
+}
+
+@media (max-width:1100px) {
+    .feedback {
+        margin-bottom: 120px;
+        &__input {
+            display: flex;
+            flex-wrap: wrap;
+            &-desc{
+                order: 3;
+                margin-top: 10px;
+            }
+
+
+        }
+
+
+    }
+}
+@media (max-width:900px){
+    .feedback{
+        &__input{
+            width: 550px;
+            margin: 0 auto;
+            row-gap: 20px;
+            &-desc{
+                width: 255px;
+            }
+        }
+
+    }
+}
+@media (max-width:850px){
+    .feedback{
+        &__title{
+            text-align: center;
+        }
+    }
+}
+@media (max-width:575px){
+    .feedback{
+        &__input{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            width: 100%;
+            &-name,
+            &-number,
+            &-submit,
+            &-desc{
+                width: 100%;
+            }
+
+        }
+    }
 }
