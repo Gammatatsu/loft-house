@@ -20,7 +20,7 @@
             z-index: 10;
             width: 30px;
             height: 24px;
-            gap:8px;
+            gap: 8px;
 
 
             & span {
@@ -114,23 +114,52 @@
     }
 }
 
-@media (max-width:700px){
-    .header{
-        &__hero{
-            &-title{
+@media (max-width:700px) {
+    .header {
+
+        &__hero {
+            &-title {
                 font-size: 30px;
             }
         }
-        &__navigation{
-            &-list{
-                display: none;
+
+        &__navigation {
+            &-logo {
+                z-index: 6;
             }
-            &-button{
+
+            &-list {
+                padding-top: 100px;
+                display: flex;
+                flex-direction: column;
+                z-index: 5;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                transition: transform 0.6s ease-out;
+                background-color: $dark;
+                opacity: .95;
+                transform: translateX(-100%);
+                overflow-x: hidden;
+                height: 100vh;
+
+                &--active {
+                    transform: translateX(0);
+
+
+
+
+                }
+            }
+
+            &-button {
                 display: flex;
             }
         }
-        &__footer{
-            &-contacts{
+
+        &__footer {
+            &-contacts {
                 flex-direction: column;
                 text-align: center;
                 row-gap: 25px;
